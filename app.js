@@ -1,4 +1,5 @@
 let score = { you : 0,  computer : 0 };
+// const userChoice = prompt("Do you choose rock, paper or scissors?").toLowerCase();
 
 let computerPlay = () => {
     let computerOptions = ['rock', 'paper', 'scissors'];
@@ -15,22 +16,33 @@ function playRound(userChoice, compChoice) {
     } else {
       return (score.computer += 1)
     }
+};
+
+// Update the scoreboard
+function displayUpdate() {
+    return(
+        document.querySelector()
+    )
 }
+// Button Assignments
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
 
-function game(x) {
-    for (let i = 1; i <= x; i++){
-        const userChoice = prompt("Do you choose rock, paper, or scissors?").toLowerCase();
-        let compChoice = computerPlay();
-        playRound(userChoice, compChoice);
-        console.log(userChoice, compChoice)
-    }
+const userChooseRock = rock.addEventListener("click", () => {
+    let userChoice = "rock";
+    let compChoice = computerPlay();
+    playRound(userChoice, compChoice);
+});
 
-    if (score.you > score.computer){
-        return("You win :D The score was " + score.you + ":" + score.computer)
-    } else if (score.you == score.computer){
-        return("It's a tie! :3 The score was " + score.you + ":" + score.computer)
-    } else {
-        return("You lose :( The score was " + score.you + ":" + score.computer)
-    }
+const userChoosePaper = paper.addEventListener("click", () => {
+    let userChoice = "paper";
+    let compChoice = computerPlay();
+    playRound(userChoice, compChoice);
+});
 
-}
+const userChooseScissors = scissors.addEventListener("click", () => {
+    let userChoice = "scissors";
+    let compChoice = computerPlay();
+    playRound(userChoice, compChoice);
+});
