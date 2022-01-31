@@ -77,7 +77,7 @@ const showLoser = document.getElementById('loser');
 const resetButton = document.createElement('button');
 const showResults = document.getElementById('showResults');
 
-resetButton.textContent = "Reset hoes";
+resetButton.textContent = "Play again? :3";
 
 const reset = resetButton.addEventListener("click", () => {
     showWinner.classList.add('hideResults');
