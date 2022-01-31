@@ -10,10 +10,10 @@
 <body>
     <div>
         <h1>You vs. Computer</h1>
-        <div>
-            <button type="submit" id = "rock" class = "btn">rock</button>
-            <button type="submit" id = "paper" class = "btn">paper</button>
-            <button type="submit" id = "scissors" class = "btn">scissors</button>
+        <div class="image-containers">
+            <img src="images/rock.png" id ="rock" />
+            <img src="images/paper.png" id ="paper" />
+            <img src="images/scissors.png" id ="scissors" />
         </div>
         <div>
                 <h1>SCORE</h1>
@@ -22,9 +22,9 @@
                 <p id="whatHappened">Click your choice, player 8)</p>
         </div>
     </div>
-    <div>
-        <h1 class = "hideResults">YOU WIN :D</h1>
-        <h1 class = "hideResults">YOU LOSE :(</h1>
+    <div id="showResults">
+        <h1 id = "winner" class = "hideResults">YOU WIN :D</h1>
+        <h1 id = "loser" class = "hideResults">YOU LOSE :(</h1>
     </div>
     <script src="app.js" charset="UTF-8"></script>
 </body>
