@@ -3,3 +3,11 @@ body {
     text-align: center;
     color: white;
 }
+
+.hideResults {
+    opacity: 0;
+}
+
+.showResults {
+    opacity: 1;
+}
